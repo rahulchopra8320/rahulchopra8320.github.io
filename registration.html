@@ -1,56 +1,132 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>registration_form</title>
+           <title>REGISTER</title>
 </head>
-<body>
+<body >
 
-    <form action="" align ="center" method="GET">
-    <h1 border-style ="dotted">Register here</h1>
+<form>
+    <table border="1">
+        <tr>
+             <td colspan="2">
+                  <h1 align="center"> Welcome To Blog  </h1>	
+             </td>
+        </tr>
+        <tr>  
+             <td>
+                   <label for="firstname">First Name:</label>
+             </td>
+             <td>
+                   <input type="text" placeholder="First name" id="fname"  required>
+             </td>
+        </tr>
+        <tr>
+           <td>
+                 <label for="lastname">Last name:</label>
+            </td>
+           <td>
+                <input type="text" id="lname"  placeholder="last Name" required>
+           </td>
+        </tr>
+         <tr>
+            <td>
+                <label for="email">Email :</label>
+            </td>
+            <td>
+                <input type="text" id="uemail"  autocomplete="off" placeholder="Enter Email" required>
+            </td>
+        </tr>
+        <tr>
+           <td>
+            <labal for="Password">Password :</labal>
+           </td>
+           <td>
+             <input type="Password" placeholder="Enter your Password" required>
+           </td>
+        </tr>
+        <tr>
+            <td>
+                 <label for="phone">Enter a phone number:</label>
+            </td>
+
+            <td>
+                 <input type="number" id="phone" maxlength="10" placeholder="91********" " required>
+            </td>
+        </tr>
+             
+        <tr>
+                 <td>
+                         <label for="date of birth"> Date of Birth: </label>
+                 </td>
+                 <td>
+                          <input type="date" id="date">
+                 </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Gender: </label>
+            </td>
+            <td>
+                <label>
+                    <input  type="radio" value="m" id="m" name="gender"> Male</label>
+                <label>
+                    <input type="radio" value="f" id="f" name="gender"> Female</label>
+                   
+            </td>
+        </tr>
+        <tr>
+            <td>
+                      <label for="country">Country:</label>
+            </td>
+           <td>  
+            <select id="country" name="country">
+                <option>--Choose City--</option>
     
-        F_name :
-        <input type="text" required=""><br><br>
-        L_name :
-        <input type="text" required=""><br><br>
+                        <option>INDIA</option>
+                        <option>USA</option>
+                        <option>AUSTRALIA</option>
+                        <option>CHINA</option>
+                        <option>Other</option>
+            </select>
+           </td>
+      </tr>
+        <tr>
+            <td>
+                    <label for="city">City: </label>
+            </td>
+            <td>
+                    <select id="city" name="city">
+                        <option>--Choose State--</option>
+                            
+                                <option>New Delhi</option>
+                                <option>MAHARASTRA</option>
+                                <option>Gujarat</option>
+                                <option>Kolkata</option>
+                             <option>PUNJAB</option>
+                                <option>ANDHRA PRADESH</option>
+                                <option>GOA</option>
+                                <option>UTTAR PRADESH</option>
+                          
+                    </select>
+            </td>
+        </tr>
+    
+        <tr>
+            <td>
+                <label>Address: </label>
+            </td>
+            <td>
+                <textarea rows="4" cols="40" placeholder="Enter Address"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit" value="Submit">Submit </button>
+                <button type="reset">Reset </button>
+            </td>
+        </tr>
+    </table>
 
-        Gender: 
-        
-        <input type="radio" name="gender" id="male" value="male" >
-        <label for="male">male</label>
-       
-        <input type="radio" name="gender" id="female " value="female">
-        <label for="female">female</label><br><br>
-        
-
-        <label for="mobile">Mobile :</label>
-        <input type="number" id="mobile" name="mobile" required=""><br><br>
-
-        <label for="email">Email ID:</label>
-        <input type="email" id="email" name="email " required=""><br><br>
-        
-        <label for="COUNTRY">select your country :</label>
-        <select name="COUNTRY" id="COUNTRY">
-            <option value="INDIA">INDIA</option>
-            <option value="USA">USA</option>
-            <option value="ENGLAND">ENGLAND</option>
-            <option value="RUSSIA">RUSSIA</option>
-        </select><br><br>
-
-        <label for="password">Password :</label>
-        <input type="password" id="password" name="password" required=""><br><br>
-
-        
-
-        <p>comment below:</p>
-        <textarea name="" id="" cols="30" rows="10" placeholder="type here" required=""></textarea>
-        </p>
-
-
-        <input type="submit" value="sign up">
-    </form>
-   
-
-</body>
-</html>
+</form>
