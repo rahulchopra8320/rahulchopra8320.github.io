@@ -1,0 +1,55 @@
+
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* ############################################################################ */
+
+ 
+#contact h1{
+    border-bottom: #33333333 1px solid;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 3.5rem 0;
+    padding-bottom: 1rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+form{
+    text-align: center;
+    
+}
+input{
+    height: 4rem;
+}
+textarea{
+    resize: none;
+    font-size: 1.8rem;
+    width: 50%;
+    height: auto;
+    
+
+}
+
+.pannel{
+    width: 50%;
+    height: auto;
+    font-size: 1.8rem;
+    margin-bottom: 1em;
+    padding: 0.5em;
+}
+.pannel-sub{
+    width: 40%;
+    background: rgb(70, 190, 124);
+    font-size: 1.8rem;
+    border: none;
+    margin-bottom: 5rem;
+}
+.pannel-sub:hover{
+    background: seagreen;
+    cursor: pointer;
+}
+ 
