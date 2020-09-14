@@ -194,7 +194,7 @@ padding-right: 20px;
 .about .content{
     padding-left: 20px;
     padding-bottom: 20px;
-      width: 70%;
+      width: 60%;
       text-align: justify;
     word-spacing: 0.1em;
     font-size: 15px;
@@ -226,7 +226,7 @@ padding-right: 20px;
     margin-bottom: 10px;
 }
 .about .imgbox{
-    max-width: 30%;
+    max-width: 40%;
 padding:10px;
      object-fit: contain;
 }
