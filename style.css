@@ -91,7 +91,7 @@ body .menu-bar{
 
 
 .slidershow{
-    width: 100%;
+    width: 80%;
     height: 400px;
    position: relative;
     overflow: hidden;
@@ -162,7 +162,7 @@ input[name="r"]{
 }
 .slogan{
 
-    padding-top: 20px;
+    padding-top: 5px;
 }
 .slogan .sloganh{
     margin-top: 20px;
