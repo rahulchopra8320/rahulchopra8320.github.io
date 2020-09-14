@@ -2,7 +2,7 @@
 {
     margin: 0;
     padding: 0;
-box-sizing: border-box;
+
 }
 
 body
@@ -161,7 +161,6 @@ input[name="r"]{
 }
 .slogan .sloganh{
     margin-top: 10px;
-    padding-top: 20px;
   text-align: center;
     font-size: 40px;
 }
@@ -180,7 +179,6 @@ position: relative;
 }
 .about1{
     padding-top: 20px;
-    padding-right: 20px;
 padding-left: 15px;
     width: 100%;
     display: inline-flex;
@@ -236,7 +234,7 @@ margin-top: auto;
 
 }
 
-
+/*login page*/
 .wrapper{
   
     margin-top: 2rem;
@@ -314,13 +312,14 @@ margin-top: auto;
   .wrapper a:hover{
       color: orange;
   }
-
+.login{
+    background-color:black;
+}
 #name{
     padding-bottom: 7px;
     
 }
 #n1{
-    
     text-align: center;
     color: white;
     padding-bottom: 50px;
@@ -357,3 +356,4 @@ textarea{
     background: seagreen;
     cursor: pointer;
 }
+ 
