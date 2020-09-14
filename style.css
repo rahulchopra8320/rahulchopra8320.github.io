@@ -94,7 +94,7 @@ body .menu-bar{
     height: 400px;
     overflow: hidden;
     padding-bottom: 10px;
-    
+    border-radius: 3px;
 }
 .middle{
     position: absolute;
@@ -157,7 +157,7 @@ input[name="r"]{
 }
 .slogan{
     margin-top:380px;
-    padding-top: 20px;
+    padding-top: 30px;
 
 }
 .slogan .sloganh{
@@ -221,7 +221,7 @@ padding-right: 20px;
 }
 .about .imgbox{
     max-width: 30%;
-
+padding:10px;
      object-fit: contain;
 }
 .about .imgbox1{
