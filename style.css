@@ -227,7 +227,7 @@ padding-right: 20px;
 }
 .about .imgbox{
     max-width: 40%;
-padding:10px;
+
      object-fit: contain;
 }
 .about .imgbox1{
@@ -246,7 +246,7 @@ margin-top: auto;
 /*login page*/
 .wrapper{
   
-    margin-top: 2rem;
+    margin-top: 3rem;
     top: 30%;
     left: 40%;
     position: absolute;
@@ -365,12 +365,8 @@ textarea{
 }
  
 @media screen and (max-width:1020px){
-    .about .content{
-        width:60%;
-    }
-    .about .imgbox{
-        width:40%;
-    }
+    .about{
+display: block;
  }
  @media screen and (max-width:510px){
     .about .content{
