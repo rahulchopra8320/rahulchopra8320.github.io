@@ -18,7 +18,7 @@ body .menu-bar{
     background-color: black;
     text-align: center;
     z-index: 5;
-    
+    padding-right: 20px;
 }
 .menu-bar ul{
     display: inline-flex;
@@ -158,6 +158,7 @@ input[name="r"]{
 .slogan{
     margin-top:380px;
     padding-top: 20px;
+
 }
 .slogan .sloganh{
     margin-top: 10px;
