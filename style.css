@@ -2,7 +2,7 @@
 {
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 
 body
@@ -12,25 +12,26 @@ body
  min-height: 100vh;
  display: flex;
  flex-direction: column;
-  box-sizing: border-box;
+ 
 }
 body .menu-bar{
-    background-color: black;
+    background-color:black;
     text-align: center;
     z-index: 5;
+    box-sizing: border-box;
+    position: relative;
     padding-right: 20px;
 }
 .menu-bar ul{
     display: inline-flex;
     list-style: none;
     color: white;
-
+width: 100%;
 }
 .menu-bar ul li{
-    width: 120px;
+    width: 100%;
     margin: 15px;
     padding: 15px;
-    position: relative;
     padding-left: 5px;
 }
 .menu-bar ul li a{
@@ -79,7 +80,7 @@ body .menu-bar{
     position: absolute;
     display: block;
     margin-top: -40px;
-    margin-left: 155px;
+    margin-left: 70%;
     background:black;
     color: orange;
 
@@ -180,9 +181,9 @@ input[name="r"]{
 .about{
 padding-top: 20px;
 padding-left: 5px;
-position: relative;
-    width: 100%;
-    display:flex;
+
+    
+    display:inline-flex;
 }
 .about1{
     padding-top: 20px;
@@ -190,11 +191,13 @@ padding-left: 15px;
 padding-right: 20px;
     width: 100%;
     display: inline-flex;
+    text-align: justify;
 }
 .about .content{
-    padding-left: 20px;
+    padding-right: 10px;
+    padding-left: 8px;
     padding-bottom: 20px;
-      width: 60%;
+      width: 70%;
       text-align: justify;
     word-spacing: 0.1em;
     font-size: 15px;
@@ -226,8 +229,7 @@ padding-right: 20px;
     margin-bottom: 10px;
 }
 .about .imgbox{
-    max-width: 40%;
-
+    width: 30%;
      object-fit: contain;
 }
 .about .imgbox1{
@@ -394,7 +396,7 @@ textarea{
   }
  
 	/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 870px) {
+    @media screen and (max-width: 890px) {
         .row {   
           flex-direction: column;
         }
@@ -403,15 +405,73 @@ textarea{
         }
         .about .content{
             display: block;
+            padding: 2px;
+            padding-right: 5px;
+            width: 100%;
+        }
+        .navbar{
+            width: 100%;
         }
         .about .imgbox{
+
+            padding-left: 1px;
             display: block;
+        }
+        .footer-1{
+            width: 100%;
+        }
+        .menu-bar{
+            width: 100%;
         }
       }
 
       /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-      @media screen and (max-width: 400px) {
+      @media screen and (max-width: 550px) {
         .navbar a {
           float: none;
           width: 100%;
         }
+         .menu-bar{
+             width: auto;
+             height: auto;
+         }
+         .menu-bar ul{
+             display: block;
+         }
+         .menu-bar ul li:hover .sub-menu-1{
+            display: inline-block;
+            width: 100%;
+           margin-top: 15px;
+            margin-left: -15px;
+         background-color:black;
+         z-index: 5;
+         
+        }
+        .hover-me:hover .sub-menu-2 {
+            position: absolute;
+            display: block;
+            margin-top: -40px;
+            margin-left: 28%;
+            background:black;
+            color: orange;
+        
+        }
+        .wrapper{
+  
+          margin-top: 3rem;
+            top: 30%;
+            left: 40%;
+            position: absolute;
+            width: 100%;
+            transform: translate(-30%,-30%);
+            text-align: center;
+            padding: 3em 3em;
+            box-shadow: 0px 0px 10px 0px rgb(0,0,0,0.4);
+            background:lightgrey;
+          border-radius: 10px;
+          
+          }
+/*.menu-bar ul li:hover .sub-menu-1{
+             display: block;
+         }*/
+    }
