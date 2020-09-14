@@ -182,7 +182,7 @@ padding-top: 20px;
 padding-left: 5px;
 position: relative;
     width: 100%;
-    display: inline-flex;
+    display:flex;
 }
 .about1{
     padding-top: 20px;
@@ -366,17 +366,19 @@ textarea{
  
 @media screen and (max-width:1020px){
     .about .content{
-        width:65%;
+        width:60%;
     }
     .about .imgbox{
-        width:35%;
+        width:40%;
     }
  }
  @media screen and (max-width:510px){
     .about .content{
         width:auto;
+        padding-right: 5px;
     }
     .about .imgbox{
         width:auto;
+        padding: 5px;
     }
  }
