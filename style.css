@@ -366,15 +366,9 @@ textarea{
  
 @media screen and (max-width:1020px){
     .about{
-display: block;
+display: flex;
  }
  @media screen and (max-width:510px){
-    .about .content{
-        width:auto;
-        padding-right: 5px;
-    }
-    .about .imgbox{
-        width:auto;
-        padding: 5px;
-    }
- }
+  .about{
+      display: block;
+  }
