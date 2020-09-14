@@ -364,3 +364,19 @@ textarea{
     cursor: pointer;
 }
  
+@media screen and (max-width:1020px){
+    .about .content{
+        width:65%;
+    }
+    .about .imgbox{
+        width:35%;
+    }
+ }
+ @media screen and (max-width:510px){
+    .about .content{
+        width:auto;
+    }
+    .about .imgbox{
+        width:auto;
+    }
+ }
