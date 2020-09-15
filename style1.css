@@ -1,49 +1,111 @@
-*
-{
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin sans', sans-serif;
 
 }
+.main_div{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.box{
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    background: rgba(0,0,0,0.8);
+    border-radius: 10px;
 
+}
+.box h1{
+    margin-bottom: 30px;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;   
+}
+
+.box .inputbox{
+    position: relative;
+}
+
+.box .inputbox input{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.box .inputbox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.box .inputbox input:focus ~ label,
+.box .inputbox input:valid ~ label{
+    top: -29px;
+    left: 0;
+    color: #03a9f4;
+    font-size: 12px;
+}
+
+.box input[type="submit"]{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #03a9f4;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+}
 body
 {
     background-color: lightgrey;
     font-family: Arial, Helvetica, sans-serif;
-  
-    float: left;
-  box-sizing: border-box;
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ 
 }
 body .menu-bar{
     background-color:black;
     text-align: center;
     z-index: 5;
+    box-sizing: border-box;
+    position: relative;
+    padding-right: 20px;
 }
-/*label{
-    margin: 0 40px 0 0;
-    font-size: 26px;
-    line-height: 70px;
-    color: wheat;
-    display: none;
-}
-#toggle{
-    display: none;
-}*/
 .menu-bar ul{
     display: inline-flex;
     list-style: none;
     color: white;
-
+width: 100%;
 }
 .menu-bar ul li{
-    width: 120px;
+    width: 100%;
     margin: 15px;
     padding: 15px;
-    position: relative;
     padding-left: 5px;
 }
 .menu-bar ul li a{
     text-decoration: none;
-    color:white;
+    color: white;
 }
 .menu-bar ul li:hover{
     border-radius: 3px;
@@ -87,7 +149,7 @@ body .menu-bar{
     position: absolute;
     display: block;
     margin-top: -40px;
-    margin-left: 155px;
+    margin-left: 70%;
     background:black;
     color: orange;
 
@@ -97,151 +159,6 @@ body .menu-bar{
         background: rgb(0,100,0);
 }
 
-.slidershow{
-    width: 100%;
-    height: 400px;
-   position: relative;
-    overflow: hidden;
-    padding-bottom: 10px;
-    
-}
-.middle{
-    position: absolute;
-    top: 42%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-
-.navigation{
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translate(-50%);
-    display: flex;
-}
-.bar{
-    width: 50px;
-    height: 10px;
-    border: 2px solid #fff;
-    margin: 6px;
-    cursor: pointer;
-}
-.bar:hover{
-    background: #fff;
-}
-input[name="r"]{
-    position: absolute;
-    visibility: hidden;
-
-}
-
-.slides{
-    margin-top:10px;
-    width: 500%;
-    height: 100%;
-    display: flex;
-}
-.slide{
-    padding-top: 20px;
-    padding-left: 0%;
-    margin-left: 0%;
-    width: 20%;
-    transition: 0.6s;
-}
-.slide img{
-    width: 100%;
-    height: 100%;
-}
-#r1:checked ~ .s1{
-    margin-left: 0;
-}
-#r2:checked ~ .s1{
-    margin-left: -20%;
-}
-#r3:checked ~ .s1{
-    margin-left: -40%;
-}
-#r4:checked ~ .s1{
-    margin-left: -60%;
-}
-#r5:checked ~ .s1{
-    margin-left: -80%;
-}
-.slogan{
-
-    padding-top: 20px;
-}
-.slogan .sloganh{
-    margin-top: 20px;
-  text-align: center;
-    font-size: 40px;
-}
-.slogan .sloganp{
-    margin-top: 2px;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.about{
-padding-top: 20px;
-padding-left: 5px;
-position: relative;
-    width: 100%;
-    display: inline-flex;
-}
-.about1{
-    padding-top: 20px;
-padding-left: 15px;
-padding-right: 20px;
-    width: 100%;
-    display: flex;
-    
-    min-width: 100vh;
-}
-.about .content{
-    padding-left: 20px;
-    padding-bottom: 20px;
-      width: 70%;
-    word-spacing: 0.1em;
-    font-size: 15px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.about .content1{
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-      width: 100%;
-    word-spacing: 0.1em;
-    font-size: 15px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
-.text ul{
-    list-style: none;
-}
-.text1 li{
-    width: 100%;
-    padding-right: 20px;
-    list-style: none;
-    
-}
-.heading{
-    color: #000;
-    font-size: 30px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-}
-.about .imgbox{
-    max-width: 30%;
-
-     object-fit: contain;
-}
-.about .imgbox1{
-    
-    float: left;
-    display: flex;
-}
 .footer-1{
     padding: 20px 40px;
     background: black;
@@ -249,122 +166,111 @@ padding-right: 20px;
 margin-top: auto;
 
 }
-.wrapper{
-  
-    margin-top: 2rem;
-    top: 30%;
-    left: 40%;
-    position: absolute;
-    transform: translate(-30%,-30%);
-    text-align: center;
-    padding: 3em 3em;
-    box-shadow: 0px 0px 10px 0px rgb(0,0,0,0.4);
-    background:lightgrey;
-  border-radius: 10px;
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 890px) {
+    .row {   
+      flex-direction: column;
+    }
+    .about{
+        display: block;
+    }
+    .about .content{
+        display: block;
+        padding: 2px;
+        padding-right: 5px;
+        width: 100%;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .about .imgbox{
+
+    
+        display: block;
+    }
+    .footer-1{
+        width: 100%;
+    }
+    .menu-bar{
+        width: 100%;
+    }
+  }
+ /* @media screen and (max-width: 600px) {
+    .menu-bar ul li a:not(:first-child), .sub-menu-1  {
+      display: none;
+    }
+    .menu-bar ul li  a.icon {
+      float: right;
+      display: block;
+    }
   }
   
-  .wrapper1{
-      margin-top: 0rem;
-      padding: 1rem 3rem;
-  }
-  .wrapper input[type=email],.wrapper input[type=text], .wrapper input[type=password] , .wrapper input[type=submit], .reg input[type=email], .reg input[type=password] , .reg input[type=text], .reg input[type=email]{
-    padding: 0.3rem;
-    width: 20rem;
-    margin-bottom: 1.5rem;
-  
-  }
-  .wrapper input[type=submit], .reg input[type=submit]{
-     background:darkgray;
-     color:black;
-     border: none;
-     padding: 0.7rem;
-     font-weight: 700;
-  }
-  .wrapper input[type=submit]:hover, .reg input[type=submit]:hover{
-     background:orange;
-     cursor: pointer;
-  }
-  .wrapper1 input[type=email],.wrapper1 input[type=text], .wrapper1 input[type=password] , .wrapper1 input[type=submit], .reg input[type=email], .reg input[type=password] , .reg input[type=text], .reg input[type=email]{
-    padding: 0.3rem;
-    width: 50%;
-    margin-bottom: 1.5rem;
-  
-  }
-  .wrapper1 input[type=submit], .reg input[type=submit]{
-     background:darkgray;
-     color:black;
-     border: none;
-     padding: 0.7rem;
-     font-weight: 700;
-  }
-  .wrapper1 input[type=submit]:hover, .reg input[type=submit]:hover{
-     background:orange;
-     cursor: pointer;
+  @media screen and (max-width: 600px) {
+    .menu-bar.responsive {position: relative;}
+    .menu-bar.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .menu-bar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .menu-bar.responsive .sub-menu-1 {float: none;}
+    .menu-bar.responsive .sub-menu-1:hover{position: relative;}
+    .menu-bar.responsive .sub-menu-1  {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 550px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+     .menu-bar{
+       margin: 0%;
+       padding: 0%;
+         width: auto;
+         height: auto;
+     }
+     .menu-bar ul{
+         display: block;
+     }
+     .menu-bar ul li:hover .sub-menu-1{
+        display: inline-block;
+        width: 100%;
+       margin-top: 15px;
+        margin-left: -15px;
+     background-color:black;
+     z-index: 5;
      
-  }
-  .sign{
-     padding: 0;
-     font-size: 1.3rem;
-     text-align: center;
-  }
-  .sign a{
-      color: black;
-      font-size: 15px;
-      text-decoration: none;
-      text-align: center;
-  
-  }
-  .sign a:hover{
-      color: orange;
-  }
-  .wrapper a{
-      color: black;
-      font-size: 15px;
-      text-decoration: none;
-      text-align: center;
-  }
-  .wrapper a:hover{
-      color: orange;
-  }
+    }
+    .hover-me:hover .sub-menu-2 {
+        position: absolute;
+        display: block;
+        margin-top: -40px;
+        margin-left: 28%;
+        background:black;
+        color: orange;
+    
+    }
+    .wrapper{
 
-#name{
-    padding-bottom: 7px;
+      
     
-}
-#n1{
-    text-align: center;
-    color:black;
-    padding-bottom: 30px;
-   padding-top: 10px;
-}
-form{
-    text-align: center;
-    
-}
-textarea{
-    resize: none;
-    font-size: 1.8rem;
-    width: 50%;
-    height: auto;
-    
-
+        
+        width: 100%;
+        
+       box-shadow: 0px 0px 10px 0px rgb(0,0,0,0.4);
+        background:lightgrey;
+      border-radius: 10px;
+      
+      }
+/*.menu-bar ul li:hover .sub-menu-1{
+         display: block;
+     }*/
 }
 
-.pannel{
-    width: 50%;
-    height: auto;
-    font-size: 1.8rem;
-    margin-bottom: 1em;
-    padding: 0.5em;
-}
-.pannel-sub{
-    width: 40%;
-    background: rgb(70, 190, 124);
-    font-size: 1.8rem;
-    border: none;
-    margin-bottom: 5rem;
-}
-.pannel-sub:hover{
-    background: seagreen;
-    cursor: pointer;
-}
