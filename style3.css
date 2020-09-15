@@ -222,7 +222,7 @@ margin-top: auto;
         width: 100%;
     }
   }
- /* @media screen and (max-width: 600px) {
+ @media screen and (max-width: 600px) {
     .menu-bar ul li a:not(:first-child), .sub-menu-1  {
       display: none;
     }
@@ -251,8 +251,9 @@ margin-top: auto;
       width: 100%;
       text-align: left;
     }
+}
   /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-/*  @media screen and (max-width: 1020px) {
+@media screen and (max-width: 1020px) {
     .navbar a {
       float: none;
       width: 100%;
@@ -320,7 +321,8 @@ margin-top: auto;
             background: rgba(0,0,0,0.8);
             border-radius: 10px;
         
-        }*/
+        }
+    }
   @media screen and (max-width: 550px) {
     .navbar a {
       float: none;
@@ -366,3 +368,4 @@ margin-top: auto;
       
       }
 }
+
