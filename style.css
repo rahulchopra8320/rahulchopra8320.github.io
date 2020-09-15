@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=montserrat:400,700&display=swap');
 
 
-*
-{
+
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -647,12 +646,15 @@ textarea{
         }
          .menu-bar{
            margin: 0%;
+           
            padding: 0%;
              width: auto;
              height: auto;
          }
          .menu-bar ul{
              display: block;
+             margin: 0%;
+             padding: 0%;
          }
          .menu-bar ul li:hover .sub-menu-1{
             display: inline-block;

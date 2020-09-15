@@ -2,7 +2,7 @@
 <html>
 <head>
     <title></title>
-    <link href="style3.css" rel="stylesheet">
+    <link href="style2.css" rel="stylesheet">
   
 </head>
 <body>
@@ -88,34 +88,52 @@
 </section>
 <div class="main_div">
     <div class="box">
-        <h1>Contact-us</h1>
-        <form id="form1" method="GET" action="home.html">
+       <h1>REGISTRATION</h1>
+        <form  method="GET" action="home.html">
           <div class="inputbox">
-              <input type="text" name="username" autocomplete="off"
+             
+              
+              <input type="text" name="Full-Name" autocomplete="off"
               required >
-              <label>username</label>
+              <label>Full Name</label>
+            
           </div>
 
           <div class="inputbox">
-            <input type="email" name="email" autocomplete="off"
+            <input type="email" name="Email" autocomplete="off"
             required >
-            <label>Email-ID</label>
+            <label>Email-id</label>
         </div>
+         
+        
         <div class="inputbox">
-            <input type="tel" name="number" autocomplete="off"
+            <input type="tel" name="Mobile Number" pattern="[0-9]+" title="Number Only" autocomplete="off"
             required >
-            <label>Contact Number</label>
-        </div>
-        <div class="inputbox">
-            <input type="text" name="Message" autocomplete="off"
-            required >
-            <label>Message</label>
+            <label>Mobile Number</label>
         </div>
        
-        <input type="submit" name="" value="Send">
-       
+        <div class="inputbox">
+            <input type="password" name="password" autocomplete="off"
+            required >
+            <label>password</label>
     </div>
-</div>                
+     
+    <div class="inputbox">
+        <input type="password" name="confirm-password" autocomplete="off"
+        required >
+        <label>Confirm-password</label>
+</div>
+ 
+<div class="inputbox">
+    <input type="text" name="Favdes" autocomplete="off"
+    required >
+    <label>Favourite Destinaion</label>
+</div>
+    <div class="btn">
+    <input type="submit" name="Register" value="Register">
+</div>
+</div>    
+</div>            
 </form>
 <footer class="footer-1">
     Copyright &copy; 2020 powered by Travel Blog

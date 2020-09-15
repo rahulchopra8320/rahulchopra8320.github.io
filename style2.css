@@ -4,16 +4,16 @@
     box-sizing: border-box;
     font-family: 'Josefin sans', sans-serif;
 
-} /*
+}
 .main_div{
     width: 100%;
     height: 100vh;
     position: relative;
 }
 .box{
-    width: 400px;
+    width: 40%;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 50px;
@@ -43,6 +43,8 @@
     border-bottom: 1px solid #fff;
     outline: none;
     background: transparent;
+    
+ 
 }
 
 .box .inputbox label{
@@ -54,6 +56,7 @@
     font-size: 16px;
     color: #fff;
     transition: 0.5s;
+    float: right;
 }
 
 .box .inputbox input:focus ~ label,
@@ -63,11 +66,9 @@
     color: #03a9f4;
     font-size: 12px;
 }
-.btn{
-    display: flex;
-    width: 100%;
-    padding-left: 35px;
-}
+
+
+
 .btn p{
     text-decoration: none;
 
@@ -88,14 +89,6 @@ padding-left: 0%;
 padding-left:  0%;
     font-size: 14px;
 }
-.box .inputbox .textarea{
-    resize: none;
-    font-size: 1.8rem;
-    width: 100%;
-    height: auto;
-    background-color: yellow;
-
-}
 .box input[type="submit"]{
     background: transparent;
     border: none;
@@ -104,10 +97,10 @@ padding-left:  0%;
     background: #03a9f4;
     padding: 8px 16px;
     border-radius: 5px;
-    margin-left: 40%;
+    margin-left: 30%;
     font-size: 14px;
     
-}*/
+}
 
 body
 {
@@ -118,94 +111,6 @@ body
  flex-direction: column;
  
 }
-.wrapper{
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.regform{
-    background: #fff;
-    width: 400px;
-    border-radius: 8px;
-    font-family: 'Century Gothic';
-    font-weight: 600;
-    position: relative;
-    display: flex;
-    padding: 10px;
-}
-/*.regform .form-left{
-    margin-bottom: -6px;
-}
-.regform .form-left img{
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-}*/
-.regform .form-detail{
-    padding: 30px 40px;
-    position: relative;
-    width: 100%;
-}
-.regform .form-detail h2{
-    text-align: center;
-    font-size: 36px;
-    padding: 6px 0 0;
-    position: relative;
-    margin-bottom: 48px;
-    color: #333;
-}
-.regform .form-detail .form-row{
-    width: 100%;
-}
-.regform .form-detail .form-row-last{
-    text-align: center;
-}
-.regform .form-detail .input-text{
-    margin-bottom: 35px;
-}
-.regform .form-detail input{
-    width: 92%;
-padding: 0 15px 10px 15px;
-border: 2px solid transparent;
-border-bottom: 2px solid lightgray;
-outline: none;
-font-family: 'Century Gothic';
-font-size: 16px;
-font-weight: 600;
-color: #333;
-}
-.regform .form-detail input:focus{
-    border-bottom: 2px solid black;
-}
-.regform .form-detail .register{
-    background: #03a9f4;
-    border-radius: 6px;
-    width: 160px;
-    padding: 10px;
-    border: none;
-    box-shadow: 0 3px 10px 0 rbga(0,0,0,0.15);
-    margin: 15px 0 50px 0;
-    font-family: 'Century Gothic';
-    font-weight: 700;
-    font-size: 18px;
-}
-.regform .form-detail .register:hover{
-    background: orange;
-}
-input::-moz-placeholder{
-    color: black;
-    font-size: 16px;
-}
-input::-webkit-input-placeholder{
-    color: black;
-    font-size: 16px;
-}
-input::-ms-input-placeholder{
-    color:black;
-    font-size: 16px;
-}
-
 body .menu-bar{
     background-color:black;
     text-align: center;
@@ -290,43 +195,8 @@ margin-top: auto;
 
 }
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max:width:991px){
-    .regform{
-        margin:120px 20px;
-    padding-top: 5px;
-
-    }
-    .regform .form-left{
-        width: 100%;
-    }
-    .regform .form-left img{
-        width: 100%;
-        border-bottom-left-radius: 0px;
-        border-top-right-radius: 8px;
-    }
-    .regform .form-detail{
-        width: auto;
-        padding: 30px 20px 30px 20px;
-
-    }   
-    .regform .form-detail .register{
-        margin-bottom: 80px;
-    } 
-
-}
-@media screen and (max:width:767px){
-    .regform .form-detail .form-row input{
-        width: 94%;
-        padding: 10px;
-    }
-}
-@media screen and (max:width:575px){
-    .regform .form-detail .form-row input{
-        width:85%;
-        padding: 10px;
-    }
-}
 @media screen and (max-width: 890px) {
+ 
     .row {   
       flex-direction: column;
     }
@@ -382,7 +252,83 @@ margin-top: auto;
       display: block;
       width: 100%;
       text-align: left;
+    }*/
+     @media screen and (max-width: 1020px) {
+    .navbar a {
+      float: none;
+      width: 100%;
     }
+  
+     .menu-bar{
+       margin: 0%;
+       padding: 0%;
+         width: auto;
+         height: auto;
+     }
+     .menu-bar ul{
+         display: block;
+     }
+     .menu-bar ul li:hover .sub-menu-1{
+        display: inline-block;
+        width: 100%;
+       margin-top: 15px;
+        margin-left: -15px;
+     background-color:black;
+     z-index: 5;
+     
+    }
+    .hover-me:hover .sub-menu-2 {
+        position: absolute;
+        display: block;
+        margin-top: -40px;
+        margin-left: 28%;
+        background:black;
+        color: orange;
+    
+    }
+    .wrapper{
+
+      
+    
+        
+        width: 100%;
+        
+       box-shadow: 0px 0px 10px 0px rgb(0,0,0,0.4);
+        background:lightgrey;
+      border-radius: 10px;
+      
+      }
+     
+        .main_div .box .form .input_field{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .main_div .box .form .input_field lable{
+            margin-bottom: 5px;
+        }
+        .main_div .box .form .input_field.terms{
+            flex-direction: row;
+        }
+        .box{
+            width: 40%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 50px;
+            background: rgba(0,0,0,0.8);
+            border-radius: 10px;
+        
+        }
+
+/*.menu-bar ul li:hover .sub-menu-1{
+         display: block;
+     }*/
+}
+
+
   /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
   @media screen and (max-width: 550px) {
     .navbar a {
@@ -416,9 +362,32 @@ margin-top: auto;
         color: orange;
     
     }
-   
+    .wrapper{
 
+      
+    
+        
+        width: 100%;
+        
+       box-shadow: 0px 0px 10px 0px rgb(0,0,0,0.4);
+        background:lightgrey;
+      border-radius: 10px;
+      
+      }
+     
+        .main_div .box .form .input_field{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .main_div .box .form .input_field lable{
+            margin-bottom: 5px;
+        }
+        .main_div .box .form .input_field.terms{
+            flex-direction: row;
+        }
+    
+/*.menu-bar ul li:hover .sub-menu-1{
+         display: block;
+     }*/
 }
-
-
 

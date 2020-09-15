@@ -1,72 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Registration form</title>
-    <link rel="stylesheet" href="styles.css">
-<head>
-<body>
-
-<div class="wrapper">
-    <div class="title">
-        Registration Form
-    </div>
-    <div class="form">
-        <div class="input_field">
-            <lable>First Name</lable>
-            <input type="text" class="input">
+<html>
+    <head>
+        <title>Registration Page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="regform">
+              <!--  <div class="form-left">
+                    <img src="images.jpg" alt="Registration page photo">
+                </div>-->
+                <form class="form-detail" action="login.html" method="GET">
+                    <h2>
+                        Register Form
+                    </h2>
+                    <div class="form-row">
+                        <input type="text" name="Fullname" id="fullname" class="input-text" placeholder="Your Full Name">
+                    </div>
+                    <div class="form-row">
+                    <input type="email" name="email" id="email" class="input-text" placeholder="Email Address">
+                       </div>
+                       <div class="form-row">
+                        <input type="password" name="password" id="password" class="input-text" placeholder="Password">
+                    </div>
+                    <div class="form-row">
+                        <input type="password" name="confirm-pwd" id="confirm-pwd" class="input-text" placeholder="Confirm Password">
+                    </div>
+                    <div class="form-row-last">
+                        <input type="submit" name="register" id="register" class="register" value="Register">
+                    </div>
+                </form>
+            </div>
         </div>
-        <div class="input_field">
-            <lable>Last Name</lable>
-            <input type="text" class="input">
-        </div>
-        <div class="input_field">
-            <lable>password</lable>
-            <input type="password" class="input">
-        </div>
-        <div class="input_field">
-            <lable>confirm password</lable>
-            <input type="password" class="input">
-        </div>
-        <div class="input_field">
-            <lable>Gender</lable>
-            <div class="custom_select">
-                <select>
-                    <option value="">Select</option>
-                    <option value="male">Male</option>
-                    <option value="female">Femail</option>    
-                </select>
-            </div>            
-        </div>
-        <div class="input_field">
-            <lable>Email Address</lable>
-            <input type="text" class="input">
-        </div>
-        <div class="input_field">
-            <lable>Phone Number</lable>
-            <input type="text" class="input">
-        </div>
-        <div class="input_field">
-            <lable>Address</lable>
-            <textarea class="textarea"></textarea>
-        </div>
-        <div class="input_field">
-            <lable>Postel Code</lable>
-            <input type="text" class="input">
-        </div>
-        <div class="input_field terms">
-            <lable class="check">
-                <input type="checkbox">
-                <span class="checkmark"></span>
-            </lable>
-            <p>Agreed to terms and conditions</p>        
-        </div>
-        <div class="inputfield">
-            
-            <input type="submit" value="Register" class="btn">
-        </div>
-    </div>        
-</div>
-
-</body>
+    </body>
 </html>
