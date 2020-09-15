@@ -194,7 +194,7 @@ margin-top: auto;
 
 }
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 890px) {
+/*@media screen and (max-width: 890px) {
     .row {   
       flex-direction: column;
     }
@@ -252,7 +252,7 @@ margin-top: auto;
       text-align: left;
     }
   /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-  @media screen and (max-width: 1020px) {
+/*  @media screen and (max-width: 1020px) {
     .navbar a {
       float: none;
       width: 100%;
@@ -369,4 +369,4 @@ margin-top: auto;
          display: block;
      }*/
 }
-
+*/
