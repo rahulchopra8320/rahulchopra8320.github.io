@@ -195,31 +195,30 @@ margin-top: auto;
 }
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 890px) {
-    .row {   
-      flex-direction: column;
-    }
-    .about{
-        display: block;
-    }
-    .about .content{
-        display: block;
-        padding: 2px;
-        padding-right: 5px;
-        width: 100%;
-    }
-    .navbar{
-        width: 100%;
-    }
-    .about .imgbox{
-
-    
-        display: block;
-    }
+   
     .footer-1{
         width: 100%;
     }
     .menu-bar{
         width: 100%;
+    }
+    .menu-bar ul li:hover .sub-menu-1{
+        display: inline-block;
+        width: 100%;
+       margin-top: 15px;
+        margin-left: -15px;
+     background-color:orange;
+     z-index: 5;
+     
+    }
+    .hover-me:hover .sub-menu-2 {
+        position: absolute;
+        display: block;
+        margin-top: -40px;
+        margin-left: 28%;
+        background:black;
+        color: orange;
+    
     }
   }
  /* @media screen and (max-width: 600px) {
@@ -253,6 +252,9 @@ margin-top: auto;
     }
   /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
   @media screen and (max-width: 1020px) {
+      body{
+          height: 100%;
+      }
     .navbar a {
       float: none;
       width: 100%;
@@ -285,18 +287,7 @@ margin-top: auto;
         color: orange;
     
     }
-    .wrapper{
-
-      
-    
-        
-        width: 100%;
-        
-       box-shadow: 0px 0px 10px 0px rgb(0,0,0,0.4);
-        background:lightgrey;
-      border-radius: 10px;
-      
-      }
+   
      
         .main_div .box .form .input_field{
             flex-direction: column;
@@ -321,6 +312,7 @@ margin-top: auto;
             border-radius: 10px;
         
         }
+    }
   @media screen and (max-width: 550px) {
     .navbar a {
       float: none;
@@ -335,38 +327,29 @@ margin-top: auto;
      .menu-bar ul{
          display: block;
      }
-     .menu-bar ul li:hover .sub-menu-1{
-        display: inline-block;
-        width: 100%;
-       margin-top: 15px;
-        margin-left: -15px;
+     /*.menu-bar ul li:hover .sub-menu-1{
+        display:block;
+        width: 50%;
+        
+      margin-top: 30px;
+       margin-left: 0%;
+       padding-left: 0%;
+       box-sizing: border-box;
      background-color:black;
      z-index: 5;
+    
      
     }
     .hover-me:hover .sub-menu-2 {
         position: absolute;
         display: block;
         margin-top: -40px;
-        margin-left: 28%;
+        margin-left:30%;
         background:black;
         color: orange;
-    
-    }
-    .wrapper{
+  width: auto;
+  
+    }*/
+  
 
-      
-    
-        
-        width: 100%;
-        
-       box-shadow: 0px 0px 10px 0px rgb(0,0,0,0.4);
-        background:lightgrey;
-      border-radius: 10px;
-      
-      }
-/*.menu-bar ul li:hover .sub-menu-1{
-         display: block;
-     }*/
 }
-
