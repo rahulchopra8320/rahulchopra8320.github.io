@@ -325,7 +325,9 @@ margin-top: auto;
          height: auto;
      }
      .menu-bar ul{
-         display: block;
+         
+         display: inline-block;
+             background:black;
      }
      /*.menu-bar ul li:hover .sub-menu-1{
         display:block;

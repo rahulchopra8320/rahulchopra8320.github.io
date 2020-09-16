@@ -642,6 +642,14 @@ textarea{
       }
       /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
      @media screen and (max-width: 550px) {
+       body{
+         margin: 0%;
+         padding: 0%;
+       }
+       header{
+         margin: 0%;
+         padding: 0%;
+       }
         .navbar a {
           float: none;
           width: 100%;
@@ -654,9 +662,8 @@ textarea{
              height: auto;
          }
          .menu-bar ul{
-             display: block;
-             margin: 0%;
-             padding: 0%;
+             display: inline-block;
+             background:black;
          }
          .menu-bar ul li:hover .sub-menu-1{
             display: inline-block;
