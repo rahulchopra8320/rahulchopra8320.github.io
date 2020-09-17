@@ -1,118 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 <head>
-    <title></title>
-    <link href="style1.css" rel="stylesheet">
-  
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   
 </head>
 <body>
-    <section>
-        <header>
-            <div class="menu-bar">
-                  
-            <ul>
-                <li><a href="home.html">
-                    <i class="fa fa-home""></i> home</a>
-                </li>        
-                <li><a href="About-us.html">
-                    <i class="fa fa-user""></i> About Us</a>
-                </li>
-                <li><a href="#">
-                    <i class="fa fa-plane" "></i>  Destination</a>
-                <div class="sub-menu-1">
-                <ul>
-                <li class="hover-me">
-                    <a href="#">Asia <i class="fa fa-angle-right"></i></a>
-                    <div class="sub-menu-2">
-                        <ul>
-                            <li>
-                                <a href="india.html">India</a>
-                            </li>
-                            <li>
-                                <a href="thailand.html">Thailand</a>
-                            </li>
-                            <li>
-                                <a href="singapore.html">Singapore</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="hover-me">
-                    <a href="#">Europe <i class="fa fa-angle-right"></i></a>
-                    <div class="sub-menu-2">
-                        <ul>
-                            <li>
-                                <a href="uk.html">UK</a>
-                            </li>
-                            <li>
-                                <a href="spain.html">Spain</a>
-                            </li>
-                            <li>
-                                <a href="italy.html">Italy</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <a href="australia.html">Australia</a>
-                </li>
-                <li class="hover-me">
-                    <a href="#">Africa <i class="fa fa-angle-right"></i></a>
-                    <div class="sub-menu-2">
-                        <ul>
-                            <li>
-                                <a href="kenya.html">Kenya</a>
-                            </li>
-                            <li>
-                                <a href="south africa.html">South Africa</a>
-                            </li>
-                            <li>
-                                <a href="egypt.html">Egypt</a>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                </ul>
-            </div>
-                </li>
-                <li><a href="Contact-us.html">
-                    <i class="fa fa-phone""></i> Contact Us</a>
-                </li>
-            
-                <li><a href="login.html">
-                    <i class="fa fa-sign-in""></i> Login</a>
-                </li>
-            </ul>
-        </div>
-    </header>
-</section>
-<div class="main_div">
-    <div class="box">
-        <h1>Welcome To Blog</h1>
-        <form id="form1" method="GET" action="home.html">
-          <div class="inputbox">
-              <input type="text" name="username" autocomplete="off"
-              required >
-              <label>username</label>
-          </div>
-
-          <div class="inputbox">
-            <input type="password" name="password" autocomplete="off"
-            required >
-            <label>password</label>
-        </div>
+    <nav>
+        <div class="logo">Tourister</div>
+        <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input class="toggle" type="checkbox" id="btn">
+          <ul>
+              <li><a href="home.html">Home</a></li>
+              
+          </ul>
+      </nav>
        
-        <input type="submit" name="" value="login">
-        <div class="btn">  
-   
-        <p>create new Account.</p><a href="regist.html">Click Here</a>
-    </div>
-    </div>
-</div>                
-</form>
-<footer class="footer-1">
-    Copyright &copy; 2020 powered by Travel Blog
-  </footer>
-</section>
-</body>  
-</html>      
+    <div class="main_div">
+        <div class="box">
+            <h1>Welcome To Blog</h1>
+            <form id="form1" method="GET" action="home.html">
+              <div class="inputbox">
+                  <input type="text" name="username" autocomplete="off"
+                  required >
+                  <label>username</label>
+              </div>
+    
+              <div class="inputbox">
+                <input type="password" name="password" autocomplete="off"
+                required >
+                <label>password</label>
+            </div>
+           
+            <input type="submit" name="" value="login">
+            <div class="btn">  
+       
+            <p>create new Account.</p><a href="regist.html">Click Here</a>
+        </div>
+        </div>
+    </div>                
+    </form>        
+  
+</body>
+</html>

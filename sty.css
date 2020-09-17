@@ -99,9 +99,7 @@ nav ul ul ul li{
    padding-top: 15px;
     font-size: 15px;
 }
-.show,.icon,input{
-    display: none;
-}
+
 /*body .menu-bar{
     background-color:black;
     text-align: center;
@@ -350,19 +348,22 @@ input[name="r"]{
         
         }
 @media all and (max-width : 968px){
-    nav ul{
+    nav .logo ul{
         margin-right: 0px;
-        float: left;
+        float: right;
     }
     nav .logo{
         padding-left: 30px;
-        width: 100%;
+        float: left;
     }
-    nav ul li, nav ul ul li{
-          display: block;
-          width: 100%;
+    nav .logo ul li{
+       color: white;
+       display: flex;
     }
-    nav ul ul{
+    nav .logo ul li a{
+        color: white;
+    }
+    /*nav ul ul{
         top: 70px;
         position: static;
         border-top: none;
@@ -419,7 +420,7 @@ input[name="r"]{
             color: black;
             padding-bottom: 70px;
        
-        }
+        }*/
        /* .about .content .text{ 
             display: block;
             width: 100%;
@@ -438,7 +439,7 @@ input[name="r"]{
             border: black;
             background: black;
         }*/
-        .about{
+       /* .about{
             display: block;
         }
         .about .content{
@@ -446,6 +447,6 @@ input[name="r"]{
             padding: 2px;
             padding-right: 5px;
             width: 100%;
-        }
+        }*/
       
     }

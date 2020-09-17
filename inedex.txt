@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
    
@@ -16,9 +16,9 @@
       </label>
       <input type="checkbox" id="btn">
         <ul>
-            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li>
-                <a href="About-us.html">About Us</a>
+                <a href="#">About Us</a>
             </li>
             <li>
                 <label for="btn-2" class="show">Destination +</label>
@@ -28,7 +28,7 @@
                 <ul>
                     <li>
                         <label for="btn-1" class="show">Australia</label>
-                        <a href="australia.html">Australia</a></li>
+                        <a href="#">Australia</a></li>
                     
                     <li>
                         <label for="btn-3" class="show">Asia +</label>
@@ -37,9 +37,9 @@
                         </a>
                         <input type="checkbox" id="btn-3">
                         <ul>
-                            <li><a href="india.html">India</a></li>
-                            <li><a href="thailand.html">Thailand</a></li>
-                            <li><a href="singapore.html">Singapore</a></li>
+                            <li><a href="#">India</a></li>
+                            <li><a href="#">Thailand</a></li>
+                            <li><a href="#">Singapore</a></li>
                         </ul>
                     </li>
                     <li>
@@ -49,9 +49,9 @@
                         </a>
                         <input type="checkbox" id="btn-4">
                         <ul>
-                            <li><a href="uk.html">UK</a></li>
-                            <li><a href="spain.html">Spain</a></li>
-                            <li><a href="italy.html">Italy</a></li>
+                            <li><a href="#">UK</a></li>
+                            <li><a href="#">Spain</a></li>
+                            <li><a href="#">Italy</a></li>
                         </ul>
                     </li>
                     <li>
@@ -61,51 +61,16 @@
                         </a>
                         <input type="checkbox" id="btn-5">
                         <ul>
-                            <li><a href="kenya.html">Kenya</a></li>
-                            <li><a href="south africa.html">South Africa</a></li>
-                            <li><a href="egypt.html">Egypt</a></li>
+                            <li><a href="#">Kenya</a></li>
+                            <li><a href="#">South Africa</a></li>
+                            <li><a href="#">Egypt</a></li>
                         </ul>
                     </li>
                 </ul>
             </li>
-            <li><a href="Contact-us.html">Contact-Us</a></li>
-            <li><a href="login.html">Login</a></li>
+            <li><a href="#">Contact-Us</a></li>
+            <li><a href="#">Login</a></li>
         </ul>
     </nav>
-
-    <div class="main_div">
-        <div class="box">
-            <h1>Contact-us</h1>
-            <form id="form1" method="GET" action="home.html">
-              <div class="inputbox">
-                  <input  type="text" name="username" autocomplete="off"
-                  required >
-                  <label>username</label>
-              </div>
-    
-              <div class="inputbox">
-                <input type="email" name="email" autocomplete="off"
-                required >
-                <label>Email-ID</label>
-            </div>
-            <div class="inputbox">
-                <input  type="tel" name="number" autocomplete="off"
-                required >
-                <label>Contact Number</label>
-            </div>
-            <div class="inputbox">
-                <input  type="text" name="Message" autocomplete="off"
-                required >
-                <label>Message</label>
-            </div>
-           
-            <input type="submit" name="" value="Send">
-           </form>
-        </div>
-
-    </div>                
-    
-    
-    
-    </body>  
-    </html>      
+</body>
+</html>
