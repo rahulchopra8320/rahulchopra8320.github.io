@@ -6,7 +6,92 @@
     <link rel="stylesheet" href="style4.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-   
+    <script type="text/javascript">
+        function validate()
+        {
+                  
+            var emailRegex = /^[A-Za-z0-9._]*\@[A-Za-z]*\.[A-Za-z]{2,5}$/;
+            var letters = /^[A-Za-z ]+$/; 
+            var fname = document.register.name.value;
+            var fpassword = document.register.pwd1.value;
+            var confirmpwd = document.register.pwd2.value; 
+            var	femail = document.register.email.value;
+            var fnumber = document.register.number.value;
+            var favorite = document.register.favdest.value;
+            if( fname == "" )
+           {
+             alert("Name cannot be blank");
+             document.register.name.focus() ;
+             return false;
+           }
+           
+           if(!letters.test(fname)){
+                     alert("Name has to be alphabets");
+                document.register.name.focus();
+                
+                return false;
+             }
+             if(fpassword == "")
+	 {
+	 	 alert("Password cannot be blank");
+		 document.register.pwd1.focus();
+		 
+		 return false;
+	 }
+	 
+	 if(fpassword.length <= 6)
+	 {
+		 	 	 alert("Password cannot be less than 6 characters");
+		 document.register.pwd1.focus();
+		 return false;
+	 }
+   if(fpassword != confirmpwd)
+	 {
+	 	 alert("Both password need to be same");
+		 document.register.pwd2.focus();
+		 
+		 return false;
+	 }
+             if (femail == "" )
+            {
+                alert("Enter email");
+                 document.register.email.focus();
+                return false;
+             }else if(!emailRegex.test(femail)){
+                alert("email format is not valid");
+                 document.register.email.focus();
+                return false;
+             }
+        
+        
+         if(isNaN(fnumber))
+             {
+                 alert("Enter numbers");
+                 document.register.number.focus();
+                 
+                 return false;
+             }
+             
+        if(fnumber.length != 10)
+             {
+                alert("Enter number equal to 10");
+                 document.register.number.focus();
+                 return false;
+             }
+             if(favorite == "")
+             {
+                  alert("Enter Favorite destiny ");
+                 document.register.favdest.focus();
+                 
+                 return false;
+             }
+    
+                    return( true );
+                   
+                  
+        }
+        
+        </script>
 </head>
 <body>
     <div class="container">
@@ -21,61 +106,38 @@
                   
               </ul>
           </nav>
-  
+          <div class="main_div">
+            <div class="box">
+                <h3>Registration</h3>
+                <form name="register" id="registeration" method="post" action="login.html" onsubmit="return(validate());"  >
+        
+                  <div class="inputbox">
+                    <input type="text" placeholder="username" name="name" id="firstname" value=""/>
+           </div>
+           <div class="inputbox">
+            <input type="password" placeholder="password" name="pwd1" id="initial-password" value="" />
+           </div>
+           <div class="inputbox">
+            <input type="password" placeholder="Confirm Password" name="pwd2" id="confirm-password" value=""  />
+           </div>
+                  <div class="inputbox">
+                    <input type="email" placeholder="Email-id" name="email" id="emailid" value="" />
+                </div>
+                <div class="inputbox">
+                    <input type="number" placeholder="Mobile Number" name="number" id="no" value=""/>
+                    
+                </div>
+                <div class="inputbox">
+                    <input type="text" placeholder="Favorite Destination" name="favdest" id="fav" />
+                   
+                </div>
+               
+                <input type="submit" name="" value="Send">
+               </form>
+            </div>
+        
+        </div>               
  
-    <div class="main_div">
-        <div class="box">
-           <h1>REGISTRATION</h1>
-            <form  method="GET" action="home.html">
-              <div class="inputbox">
-                 
-                  
-                  <input type="text" name="Full-Name" autocomplete="off"
-                  required >
-                  <label>Full Name</label>
-                
-              </div>
-    
-              <div class="inputbox">
-                <input type="email" name="Email" autocomplete="off"
-                required >
-                <label>Email-id</label>
-            </div>
-             
-            
-            <div class="inputbox">
-                <input type="tel" name="Mobile Number" pattern="[0-9]+" title="Number Only" autocomplete="off"
-                required >
-                <label>Mobile Number</label>
-            </div>
-           
-            <div class="inputbox">
-                <input type="password" name="password" autocomplete="off"
-                required >
-                <label>password</label>
-        </div>
-         
-        <div class="inputbox">
-            <input type="password" name="confirm-password" autocomplete="off"
-            required >
-            <label>Confirm-password</label>
-    </div>
-     
-    <div class="inputbox">
-        <input type="text" name="Favdes" autocomplete="off"
-        required >
-        <label>Fav Destination</label>
-    </div>
-        <div class="btn">
-        <input type="submit" name="Register" value="Register">
-    </div>
-    
-    
-    </div>
-    </div>    
-              
-    </form>  
-       
     </div>
 </body>
 </html>

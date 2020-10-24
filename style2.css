@@ -124,7 +124,7 @@ nav ul ul ul li{
     border-radius: 10px;
   
   }
-  .box h1{
+  .box h3{
     margin-bottom: 30px;
     color: #fff;
     text-align: center;
@@ -159,13 +159,13 @@ nav ul ul ul li{
     transition: 0.5s;
   }
   
-  .box .inputbox input:focus ~ label,
+  /*.box .inputbox input:focus ~ label,
   .box .inputbox input:valid ~ label{
     top: -29px;
     left: 0;
     color: #03a9f4;
     font-size: 12px;
-  }
+  }*/
   .btn{
     display: flex;
     width: 100%;

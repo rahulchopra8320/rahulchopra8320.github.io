@@ -3,74 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
    
 </head>
 <body>
+    <div class="container">
     <nav>
-      <div class="logo">
-
-      TOURISTER
-   
-        <ul>
-            <li><a href="home.html">Home</a></li>
-          <!--  <li>
-                <a href="About-us.html">About Us</a>
-            </li>
-            <li>
-                <label for="btn-2" class="show">Destination +</label>
-               
-                <a href="#">Destination</a>
-                <input type="checkbox" id="btn-2">
-                <ul>
-                    <li>
-                        <label for="btn-1" class="show">Australia</label>
-                        <a href="australia.html">Australia</a></li>
-                    
-                    <li>
-                        <label for="btn-3" class="show">Asia +</label>
-                        <a href="#">Asia    
-                        <span class="fa fa-plus"></span>   
-                        </a>
-                        <input type="checkbox" id="btn-3">
-                        <ul>
-                            <li><a href="india.html">India</a></li>
-                            <li><a href="thailand.html">Thailand</a></li>
-                            <li><a href="singapore.html">Singapore</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <label for="btn-4" class="show">Europe +</label>
-                        <a href="#">Europe
-                        <span class="fa fa-plus"></span>   
-                        </a>
-                        <input type="checkbox" id="btn-4">
-                        <ul>
-                            <li><a href="uk.html">UK</a></li>
-                            <li><a href="spain.html">Spain</a></li>
-                            <li><a href="italy.html">Italy</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <label for="btn-5" class="show">Africa +</label>
-                        <a href="#">Africa  
-                        <span class="fa fa-plus"></span>   
-                        </a>
-                        <input type="checkbox" id="btn-5">
-                        <ul>
-                            <li><a href="kenya.html">Kenya</a></li>
-                            <li><a href="south africa.html">South Africa</a></li>
-                            <li><a href="egypt.html">Egypt</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li><a href="cn.html">Contact-Us</a></li>
-            <li><a href="login.html">Login</a></li>
-        </ul>-->
-    </div>
-    </nav>
+        <div class="logo">Tourister</div>
+        <label for="btn" class="icon">
+            <span class="fa fa-bars"></span>
+        </label>
+        <input class="toggle" type="checkbox" id="btn">
+          <ul>
+              <li><a href="home.html">Home</a></li>
+              
+          </ul>
+      </nav>
+       
+    <div class="main_div">
+        <div class="box">
+            <h1>Welcome To Blog</h1>
+            <form id="form1" method="GET" action="home.html">
+              <div class="inputbox">
+                  <input type="text" name="username" autocomplete="off"
+                  required >
+                  <label>username</label>
+              </div>
+    
+              <div class="inputbox">
+                <input type="password" name="password" autocomplete="off"
+                required >
+                <label>password</label>
+            </div>
+           
+            <input type="submit" name="" value="login">
+            <div class="btn">  
+       
+            <a href="regist.html">Click Here new Account</a>
+        </div>
+        </div>
+    </div>                
+    </form>   
+    
+    <footer class="footer">
+        Copyright &copy; 2020 powered by Travel Blog
+      </footer>     
+</div>
 </body>
 </html>

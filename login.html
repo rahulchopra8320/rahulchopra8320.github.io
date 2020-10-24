@@ -6,7 +6,45 @@
     <link rel="stylesheet" href="style2.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-   
+    <script type="text/javascript">
+        function validate()
+        {
+            var letters = /^[A-Za-z ]+$/; 
+            var fname = document.register.name.value;
+           var fpassword = document.register.pwd1.value;
+            if( fname == "" )
+           {
+             alert("Name cannot be blank");
+             document.register.name.focus() ;
+             return false;
+           }
+           
+           if(!letters.test(fname)){
+                     alert("Name has to be alphabets");
+                document.register.name.focus();
+                
+                return false;
+             }
+             if(fpassword == "")
+	 {
+	 	 alert("Password cannot be blank");
+		 document.register.pwd1.focus();
+		 
+		 return false;
+	 }
+	 
+	 if(fpassword.length <= 6)
+	 {
+		 	 	 alert("Password cannot be less than 6 characters");
+		 document.register.pwd1.focus();
+		 return false;
+	 }
+                    return( true );
+                   
+                  
+        }
+        
+        </script>
 </head>
 <body>
     <div class="container">
@@ -24,21 +62,20 @@
        
     <div class="main_div">
         <div class="box">
-            <h1>Welcome To Blog</h1>
-            <form id="form1" method="GET" action="home.html">
-              <div class="inputbox">
-                  <input type="text" name="username" autocomplete="off"
-                  required >
-                  <label>username</label>
-              </div>
+            <h3>Welcome To Blog</h3>
+            <form name="register" id="registeration" method="post" action="home.html" onsubmit="return(validate());"  >
+
+                <div class="inputbox">
+                  <input type="text" placeholder="username" name="name" id="firstname" value=""/>
+       
+                   
+                </div>
     
               <div class="inputbox">
-                <input type="password" name="password" autocomplete="off"
-                required >
-                <label>password</label>
+                <input type="password" placeholder="password" name="pwd1" id="initial_password" value="" /> 
             </div>
            
-            <input type="submit" name="" value="login">
+            <input type="submit" name="submit" value="login">
             <div class="btn">  
        
             <a href="regist.html">Click Here new Account</a>

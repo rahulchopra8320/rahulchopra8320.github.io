@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Registeration</title>
+<link rel="stylesheet" href="style2.css">
+<script type="text/javascript">
+function validate()
+{
+		  
+	var emailRegex = /^[A-Za-z0-9._]*\@[A-Za-z]*\.[A-Za-z]{2,5}$/;
+	var letters = /^[A-Za-z ]+$/; 
+	var fname = document.register.name.value;
+	var	femail = document.register.email.value;
+	var fnumber = document.register.number.value;
+	var add = document.register.addr.value;
+	if( fname == "" )
+   {
+	 alert("Name cannot be blank");
+	 document.register.name.focus() ;
+	 return false;
+   }
+   
+   if(!letters.test(fname)){
+			 alert("Name has to be alphabets");
+		document.register.name.focus();
+		
+		return false;
+	 }
+	 
+ if(add == "")
+	 {
+	 	 alert("Address cannot be blank");
+		 document.register.address.focus();
+		 
+		 return false;
+	 }
+
+ if(isNaN(fnumber))
+	 {
+		 alert("Enter numbers");
+		 document.register.number.focus();
+		 
+		 return false;
+	 }
+	 
+if(fnumber.length != 10)
+	 {
+		alert("Enter number equal to 10");
+		 document.register.number.focus();
+		 return false;
+	 }
+     if (femail == "" )
+	{
+		alert("Enter email");
+		 document.register.email.focus();
+		return false;
+	 }else if(!emailRegex.test(femail)){
+		alert("email format is not valid");
+		 document.register.email.focus();
+		return false;
+	 }
+			return( true );
+           
+		  
+}
+
+</script>
+</head>
+
+<body>
+    <div class="container">
+    <div class="main_div">
+        <div class="box">
+            <h1>Contact-us</h1>
+<form name="register" id="registeration" method="post" action="date.html" onsubmit="return(validate());"  >
+
+	
+
+
+
+    <div class="inputbox">
+ <input type="text" placeholder="check" name="name" id="firstname" value="" size="30"/>
+ <label>username</label>
+</div>
+ <div class="inputbox">
+ <textarea name="address" id="addr" cols="25" rows="15" >
+</textarea>
+<label>Message</label>
+</div>
+<div class="inputbox">
+
+<input type="number" name="number" id="no" value="" />
+<label>Contact Number</label>
+</div>
+<div class="inputbox">
+
+<input type="email" name="email" id="emailid" value="" />
+<label>Email-ID</label>
+</div>
+<input type="reset" name="reset" id="reset" value="RESET" />
+
+<input type="submit" name="submit" id="submit" value="ok"  />
+
+</form>
+</div>
+
+</div>   
+</body>
+</html>

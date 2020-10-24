@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style4.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">Tourister</div>
+            <label for="btn" class="icon">
+                <span class="fa fa-bars"></span>
+            </label>
+            <input class="toggle" type="checkbox" id="btn">
+              <ul>
+                  <li><a href="login.html">Login</a></li>
+                  
+              </ul>
+          </nav>
+  
+ 
+    <div class="main_div">
+        <div class="box">
+           <h1>REGISTRATION</h1>
+            <form  method="GET" action="home.html">
+              <div class="inputbox">
+                 
+                  
+                  <input type="text" name="Full-Name" autocomplete="off"
+                  required >
+                  <label>Full Name</label>
+                
+              </div>
+    
+              <div class="inputbox">
+                <input type="email" name="Email" autocomplete="off"
+                required >
+                <label>Email-id</label>
+            </div>
+             
+            
+            <div class="inputbox">
+                <input type="tel" name="Mobile Number" pattern="[0-9]+" title="Number Only" autocomplete="off"
+                required >
+                <label>Mobile Number</label>
+            </div>
+           
+            <div class="inputbox">
+                <input type="password" name="password" autocomplete="off"
+                required >
+                <label>password</label>
+        </div>
+         
+        <div class="inputbox">
+            <input type="password" name="confirm-password" autocomplete="off"
+            required >
+            <label>Confirm-password</label>
+    </div>
+     
+    <div class="inputbox">
+        <input type="text" name="Favdes" autocomplete="off"
+        required >
+        <label>Fav Destination</label>
+    </div>
+        <div class="btn">
+        <input type="submit" name="Register" value="Register">
+    </div>
+    
+    
+    </div>
+    </div>    
+              
+    </form>  
+       
+    </div>
+</body>
+</html>
