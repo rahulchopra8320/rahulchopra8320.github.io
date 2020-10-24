@@ -57,7 +57,7 @@ nav ul li a:hover{
               z-index: 5;
 }
 nav ul ul li a:hover{
-  color: cyan;
+  color:cyan;
   box-shadow: none;
  
 }
@@ -388,7 +388,7 @@ color: black;
   }
   .show{
       display: block;
-      color: white;
+      color:white;
       font-size: 18px;
       padding: 0 20px;
       line-height: 70px;
@@ -445,11 +445,29 @@ color: black;
       .about{
           display: block;
       }
+      .about .imgbox{
+         padding-left: 13%;
+    }
       .about .content{
           display: block;
           padding: 2px;
           padding-right: 5px;
           width: 100%;
       }
-    
+      .about .content .heading{
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+      .foot {
+          display: block;
+      }
+      .footer{
+        
+      background: black;
+      color:white;
+   width: 100%;
+   text-align: center;
+  
+        }
   }

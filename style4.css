@@ -8,7 +8,7 @@
 body {
   background-color: lightgray;
 }
-/*.container{
+.container{
   position: relative;
   min-height: 100vh;
   
@@ -106,7 +106,7 @@ nav ul ul ul li{
 }
 .show,.icon,.toggle{
   display: none;
-}*/
+}
 
 .main_div {
   width: 100%;
@@ -232,13 +232,106 @@ nav ul ul ul li{
   .box .inputbox label {
     font-size: small;
   }
+  .main_div{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+  }
+  .box{
+    width: 370px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    background: rgba(0,0,0,0.8);
+    border-radius: 10px;
+  
+  }
+  
+  
+  nav ul{
+      margin-right: 0px;
+      float: left;
+  }
+  nav .logo{
+      padding-left: 30px;
+      width: 100%;
+  }
+  nav ul li, nav ul ul li{
+        display: block;
+        width: 100%;
+  }
+  nav ul ul{
+      top: 70px;
+      position: static;
+      border-top: none;
+      float: none;
+      display: none;
+      opacity: 1;
+      visibility: visible;
+  }
+  nav ul ul ul li{
+      position: static;
+  }
+  /*nav ul ul li{
+      border-bottom: 0px;
+  }*/
+  nav ul ul a{
+      padding-left: 80px;
+  }
+  nav ul ul ul a{
+      padding-left: 40px;
+  }
+  .show{
+      display: block;
+      color: white;
+      font-size: 18px;
+      padding: 0 20px;
+      line-height: 70px;
+      cursor: pointer;
+      }
+  .show:hover{
+      color: cyan;
+  }
+  .icon{
+      display: block;
+      color: white;
+      position: absolute;
+      right: 40px;
+      line-height: 70px;
+      font-size: 25px;
+      cursor: pointer;
+      padding-top: 5px;
+  }
+  nav ul li a:hover{
+          box-shadow: none;
+
+      }
+      .show + a,ul{
+          display: none;
+      }
+      [id^=btn]:checked + ul{
+          display: block;
+      }
 }
-@media all and (max-width: 530px) {
+@media all and (max-width: 540px) {
   .main_div {
     width: 100%;
     height: 100vh;
     position: relative;
     margin: 10%;
+  }
+  .box input[type="submit"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #03a9f4;
+    padding: 8px 16px;
+    border-radius: 5px;
+    margin-left: 20%;
+    font-size: 14px;
   }
   .box {
     width: 70%;
