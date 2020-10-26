@@ -446,7 +446,9 @@ color: black;
           display: block;
       }
       .about .imgbox{
-         padding-left: 13%;
+         margin-left: auto;
+         margin-right: auto;
+         display: block;
     }
       .about .content{
           display: block;

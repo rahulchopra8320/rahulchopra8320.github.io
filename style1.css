@@ -439,12 +439,22 @@ input[name="r"]{
         .about{
             display: block;
         }
+        .about .imgbox{
+           margin-left: auto;
+           margin-right: auto;
+           display: block;
+      }
         .about .content{
             display: block;
             padding: 2px;
             padding-right: 5px;
             width: 100%;
         }
+        .about .content .heading{
+          display: block;
+          text-align: center;
+          width: 100%;
+      }
       
 
     }
