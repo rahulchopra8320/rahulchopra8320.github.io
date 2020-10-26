@@ -20,20 +20,20 @@
             var favorite = document.register.favdest.value;
             if( fname == "" )
            {
-             alert("Name cannot be blank");
+             alert("Please Enter Your Name");
              document.register.name.focus() ;
              return false;
            }
            
            if(!letters.test(fname)){
-                     alert("Name has to be alphabets");
+                     alert("Name does not contain Number!");
                 document.register.name.focus();
                 
                 return false;
              }
              if(fpassword == "")
 	 {
-	 	 alert("Password cannot be blank");
+	 	 alert("Please Enter Password");
 		 document.register.pwd1.focus();
 		 
 		 return false;
@@ -47,18 +47,18 @@
 	 }
    if(fpassword != confirmpwd)
 	 {
-	 	 alert("Both password need to be same");
+	 	 alert("Password do not match");
 		 document.register.pwd2.focus();
 		 
 		 return false;
 	 }
              if (femail == "" )
             {
-                alert("Enter email");
+                alert("Please Enter email");
                  document.register.email.focus();
                 return false;
              }else if(!emailRegex.test(femail)){
-                alert("email format is not valid");
+                alert("Enter valid Email");
                  document.register.email.focus();
                 return false;
              }
@@ -66,7 +66,7 @@
         
          if(isNaN(fnumber))
              {
-                 alert("Enter numbers");
+                 alert("Enter Mobile numbers");
                  document.register.number.focus();
                  
                  return false;
@@ -74,7 +74,7 @@
              
         if(fnumber.length != 10)
              {
-                alert("Enter number equal to 10");
+                alert("Enter number not more than 10");
                  document.register.number.focus();
                  return false;
              }
